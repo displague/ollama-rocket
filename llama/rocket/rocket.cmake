@@ -19,7 +19,7 @@ if(GGML_ROCKET)
         include(FetchContent)
         find_package(Threads REQUIRED)
 
-        set(GGML_ROCKET_GIT_TAG "f995b86c3e8083db20bedd93624783f336485412" CACHE STRING "Pinned ggml-rocket commit")
+        set(GGML_ROCKET_GIT_TAG "6d697a7cf0f0a5c31600f50ccf9b19aae19a9c87" CACHE STRING "Pinned ggml-rocket commit")
         set(ROCKET_USERSPACE_GIT_TAG "88cae6d37367bcf65e467524a0a15b89dec01d0d" CACHE STRING "Pinned rocket-userspace commit")
         set(RKNPU_SUBMIT_GIT_TAG "0d1fa72d28b0112c918c7865b18904e6fa140752" CACHE STRING "Pinned rknpu-submit commit")
 
@@ -53,7 +53,7 @@ if(GGML_ROCKET)
         )
         FetchContent_Declare(
             ggml_rocket
-            GIT_REPOSITORY "https://github.com/gregordinary/ggml-rocket.git"
+            GIT_REPOSITORY "https://github.com/displague/ggml-rocket.git"
             GIT_TAG ${GGML_ROCKET_GIT_TAG}
             SOURCE_SUBDIR __no_cmake_subdir__
         )
